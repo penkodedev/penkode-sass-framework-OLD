@@ -1,0 +1,41 @@
+/*
+----------------------------
+@FOOTER 
+----------------------------
+*/
+
+footer {
+    display: flex;
+    text-align: center;
+}
+
+.footer-content {
+    margin: 0px auto;
+    padding: 40px 0px 0px 0px;
+
+    p {
+        @include copy-text;
+        font-size: $text-size/1.65;
+        line-height: $text-lh/1.85;
+        max-width: 750px;
+        text-align: center;
+
+        p b {
+            color: $text-color;
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    
+    img {
+    max-width: 9%;
+}
+}

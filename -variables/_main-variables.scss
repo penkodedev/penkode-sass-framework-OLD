@@ -1,0 +1,302 @@
+
+/////////////////////////////
+//                      
+//        COLORS
+//
+/////////////////////////////
+
+//
+// Gray system
+//
+$white:   #fff    !default;
+$gray100: #f8f9fa !default;
+$gray200: #efefef !default;
+$gray300: #dee2e6 !default;
+$gray400: #ced4da !default;
+$gray500: #adb5bd !default;
+$gray600: #6c757d !default;
+$gray700: #495057 !default;
+$gray800: #343a40 !default;
+$gray900: #212529 !default;
+$black:   #000    !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray100,
+    "200": $gray200,
+    "300": $gray300,
+    "400": $gray400,
+    "500": $gray500,
+    "600": $gray600,
+    "700": $gray700,
+    "800": $gray800,
+    "900": $gray900
+  ),
+  $grays
+);
+
+
+//
+// Main Body Color
+//
+$body-color: #fff;
+
+//
+// HTML Colors
+//
+$hr-color-bg: #ccc;
+$text-screen-color: #21759b;
+
+//
+// Brandind Colors
+//
+$branding-color1: #3b3b3b;
+$branding-color2:#888888;
+$branding-color3:#c7c7c7;
+
+//
+// STRUCTURE Colors
+//
+$header-bg-color: #fff;
+$main-bg-color: #fff;
+$sidebar-bg-color: #efefef;
+$article-bg-color: #fff;
+$section-bg-color:#efefef;
+$footer-bg-color:#edd8d8;
+$pagetitle-color: #000;
+$pagetitle-bg-color:#efefef;
+
+
+//
+// Links Colors
+//
+$link-color: black;
+$link-color-hover: red;
+//$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
+//$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+
+//
+// Article Links Colors
+//
+$article-link-color: red;
+$article-link-decoration-color:red;
+$article-link-color-hover:white;
+
+
+//
+// Typography Colors
+//
+$text-color: #000;
+$text-color2: red;
+
+$heading-color: black;
+$heading-color-line: green;
+$heading-color2: green;
+
+$quote-bg-color: #fff;
+$quote-border-color: green;
+$quote-quote-color: green;
+
+//
+// Main Nav Colors
+//
+$main-nav-color: #000;
+$main-nav-hover-color: #fff;
+$main-nav-hover-bg: #888;
+
+
+//
+// Main Nav submenu Colors
+//
+$sub-menu-color: #fff;
+$sub-menu-color-hover: #000;
+$sub-menu-bg: #888;
+$sub-menu-bg-hover: #ccc;
+$current-item-color: $branding-color3; //Current menu color; //Current menu color
+
+
+//
+// Footer Nav Colors
+//
+$footer-nav-color: #000;
+$footer-nav-color-hover: red;
+$footer-nav-bg: #888;
+
+
+//
+// Article Links Colors
+//
+$article-link-color: red;
+$article-link-color-hover:white;
+$article-link-decoration-color:red;
+
+
+//
+// Page Title Colors
+//
+
+$page-title-color: #000;
+$page-title-bg-color: #efefef;
+
+
+//
+// Buttons Colors
+//
+$button-link-color:#000;
+$button-bg: #ffffff;
+$button-bg-hover:#999;
+$button-color-hover:#fff;
+$button-border-color:#a7a7a7;
+$button-border-color-hover: #ccc #bbb #aaa;
+$button-border-color-focus: #aaa #bbb #bbb;
+$button-border-color-input: #ccc;
+$button-border-color-abbr: #666;
+
+$button-border-input: #ccc;
+$button-border-abbr: #666;
+
+
+//
+// Inputs
+//
+$text-font: 'OpenSans-Regular', Helvetica, Arial, sans-serif;
+$text-size: 1.12rem;
+$text-lh: 1.88rem;
+$text-margin: 0px 0px 20px 0px;
+$input-text-color: #000;
+$input-text-color-focus: #fff;
+$input-border-color:#a7a7a7;
+$input-border-active-color:red;
+$input-bg-color:#fff;
+$input-bg-color-hover:#666;
+
+//
+// ERROR Messajes
+//
+$error-bg-color: #cbcb18;
+$error-border-color:$button-border-color;
+$error-font-color:$text-color;
+
+//
+// Border Colors
+//
+$border-color-medium: $gray200;
+$border-color-bright: $gray400;
+$border-color-dark: $gray600;
+
+
+///////////////////////////////////
+//                      
+//    TYPOGRAPHY FONTS & SIZES
+//
+///////////////////////////////////
+
+//
+// TEXT WEIGHTS
+//
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 800;
+
+
+//
+// MAIN TEXT
+//
+$text-font: 'OpenSans-Regular', Helvetica, Arial, sans-serif;
+$text-size: 1.12rem;
+$text-lh: 1.8rem;
+$text-margin: 0px 0px 1.2em 0px;
+
+
+//
+// HEADINGS
+//
+$heading-font: 'Muli-ExtraBold', Helvetica, Arial, sans-serif;
+$heading-weight: normal;
+$heading-margin: 0px 0px 0px 0px;
+$h1-size: calc(2.8rem + 0.1vw);
+$h2-size: calc(2.1rem + 0.5vw);
+$h3-size: calc(1.5rem + 0.5vw);
+$h4-size: calc(1.2rem + 0.5vw);
+$h5-size: calc(1rem + 0.5vw);
+$h6-size: calc(0.8rem + 0.5vw);
+$heading-letter-spacing: -0.05rem;
+
+
+//
+// PAGE TITLES
+//
+$page-title-font: 'Muli-ExtraBold', Helvetica, Arial, sans-serif;
+$page-title-font-size:calc(2.4rem + 2.5vmin);
+$page-title-weight: normal;
+$page-title-margin: 0px;
+$page-title-letter-spacing: -0.06rem;
+$page-title-lh:calc(2.4rem + 3.5vmin);
+
+
+//
+// ARTICLE LINK SIZE
+//
+$article-link-font-weight: 300;
+$article-link-decoration:underline;
+
+//
+// SECOND LEVEL LINK SIZE
+//
+$second-level-link-size: ($text-size/1.28);
+
+
+//
+// CAPTIONS
+//
+$caption-color: #000;
+$caption-weight: bold;
+$caption-margin: -5px 0px 10px 0px;
+$caption-letter-spacing: -0.06rem;
+$caption-align: left;
+
+//
+// MONO
+//
+$mono: "Source Code Pro", Courier, mono;
+
+
+//
+// PREFORMATED TEXT
+//
+$pre: "Courier", Courier, monospace;
+
+
+///////////////////////////////////
+//                      
+//         LAY OUT SPECS
+//
+///////////////////////////////////
+
+//
+// BORDER RADIUS
+//
+$border-radius-l:0.4em;
+$border-radius-m:0.8em;
+$border-radius-x:1.2em;
+$border-radius-xx:2em;
+
+
+//
+// BORDER WIDTH
+//
+$border-l:0.010em;
+$border-m:0.150em;
+$border-x:0.200em;
+$border-xx:0.300em;
+
+//
+// PADDINGS
+//
+$padding-l:0.5em;
+$padding-m:1em;
+$padding-x:1.5em;
+$padding-xx:2.5em;
+

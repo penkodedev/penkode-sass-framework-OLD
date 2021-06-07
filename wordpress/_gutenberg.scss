@@ -1,0 +1,73 @@
+/*
+----------------------------
+    @GUTENBERG  
+----------------------------
+*/
+//
+// COVER IMAGE buttons & text
+//
+div.wp-block-cover p {
+    z-index: 9;
+    letter-spacing: $heading-letter-spacing;
+
+    a:link {
+        color: $button-link-color !important;
+        display: inline-block;
+        margin-top: 2em;
+    }
+}
+
+
+//
+// BUTTONS
+//
+div.wp-block-button a.wp-block-button__link {
+    margin-top: -1em;
+}
+
+.wp-block-button.aligncenter {
+    display: block;
+}
+
+
+//
+// Multi Columns CAPTIONS
+//
+div.wp-block-column div.wp-block-image figcaption {
+    font-weight: $bold;
+}
+
+
+//
+// GALLERIES IMAGES HEIGHT ISSUE
+//
+.wp-block-gallery .blocks-gallery-image figure, .wp-block-gallery .blocks-gallery-item figure {
+  height: auto !important;
+}
+
+
+//
+// LATEST POSTS & ARCHIVES
+//
+.wp-block-latest-posts ,
+.wp-block-archives {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.wp-block-latest-posts li {
+    background: #efefef;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+
+    a {
+        text-decoration: none;
+        color: $article-link-color;
+    }
+}
+
+
+ul.wp-block-latest-posts li::before,
+ul.wp-block-archives li::before{
+    content: none;
+}

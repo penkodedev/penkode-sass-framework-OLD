@@ -1,0 +1,61 @@
+/*
+----------------------------
+    @HEADER  
+----------------------------
+*/
+#home-full-col header { //Header Over Slideshow on Home
+    background:none; 
+}
+
+header { //define header head on the grid
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: $header-bg-color;
+    z-index: 9999;
+}
+
+#logo-container {
+    margin-left: 20px;
+    width: 100px; // LOGO TOP SIZE
+}
+
+#logo-container img {
+    shape-rendering:geometricPrecision;
+    width: 100%;
+    height: auto;
+}
+
+#logo-container a:link,
+#logo-container a:visited {
+    border: 0px;
+    background: none;
+    cursor: pointer;
+    display: block;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+#logo-container a:hover {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    background: $branding-color1;
+    height: 4em;
+    padding: $padding-m;
+
+    p {
+        font-size: $text-size/1.5;
+    }
+}

@@ -1,0 +1,103 @@
+/*
+----------------------------
+    @LINKS   
+----------------------------
+*/
+//----------------------------------------------------
+//            ARTICLE
+//----------------------------------------------------
+
+$article-link: 'article p a:link, main p a:link, article ul a:link, p#breadcrumbs a,';
+
+#{$article-link}:visited,
+a:visited {
+    color: $article-link-color;
+    font-weight: $article-link-font-weight;
+    text-decoration: $article-link-decoration;
+    text-decoration-color: $article-link-decoration-color;
+    padding: 0px 0px;
+    transition: color 0.6s ease-out, background 0.6s ease-out;
+
+    &:hover {
+        color: $article-link-color-hover;
+        background: #999;
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.wp-block-gallery figure a, article a img {
+    transition: transform .3s; /* Animation */
+        &:hover {
+        transform: scale(1.013);
+    }
+}
+
+//----------------------------------------------------
+//            SIDEBAR
+//----------------------------------------------------
+
+.sidebar a {
+    @include copy-text;
+    font-size: $second-level-link-size;
+    text-decoration: none;
+    line-height: $second-level-link-size / 0.65;
+    margin: 0px 0px $padding-l 0px;
+    color: $article-link-color;
+    display: block;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+//----------------------------------------------------
+//            LOGIN PAGE
+//----------------------------------------------------
+
+.page-template-login article {
+    display: flex;
+    justify-content: center;
+}
+
+.page-template-login article a {
+    margin: 10px;
+}
+
+
+//----------------------------------------------------
+//            GENERAL STUFF
+//----------------------------------------------------
+
+article a img:hover {
+    background: none !important;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:$white;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $gray600;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 999;
+
+    &:before {
+        content: '\f106';
+        font-family: 'FontAwesome';
+        font-size: 2em;
+        color: $gray600;
+        position: absolute;
+        left: 12px;
+        top: 2px;
+
+        &:hover {
+            background: $gray600;
+            color: $white;
+        }
+    }
+}

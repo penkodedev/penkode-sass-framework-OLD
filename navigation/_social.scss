@@ -1,0 +1,30 @@
+/*
+----------------------------
+    @SOCIAL BUTTONS  
+----------------------------
+*/
+
+.social {
+    margin: 20px;
+}
+
+.social a i {
+    font-size: 1.2em;
+    color: $gray700;
+    background: $white;
+    display: inline-block;    
+    border: 1px solid $black;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    margin: 5px;
+    text-align: center;
+    line-height: 1.6em;
+    /* or 50% width & line-height */
+
+    &:hover {
+        color: $white;
+        background:none;
+    }
+}

@@ -1,0 +1,66 @@
+/*
+----------------------------
+    @PLUGINS 
+----------------------------
+*/
+
+//----------------------------------------------------
+//            SMART SLIDER
+//----------------------------------------------------
+
+#home-full-col .full-slider {
+    top: -130px; //Header height
+}
+
+
+//----------------------------------------------------
+//            YOAST BREADCRUMBS
+//----------------------------------------------------
+p#breadcrumbs {
+    font-size: $second-level-link-size / 1.03 !important;
+    @include copy-text (0px 0px 1em 0px);
+}
+
+//----------------------------------------------------
+//            CONTACT FORM7
+//----------------------------------------------------
+.wpcf7-validation-errors,
+.div.wpcf7-response-output {
+    background: $error-bg-color;
+    border: 2px;
+    font-family: $text-font;
+    color: $error-font-color;
+    font-size: 1em;
+    padding: 40px;
+
+}
+
+form.wpcf7-form p {
+    line-height: 0rem;
+}
+
+span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+//----------------------------------------------------
+//            GUTENBERG
+//----------------------------------------------------
+
+li.blocks-gallery-item:before {
+    content: 'none';
+    display: none;
+}
+
+ul.wp-block-gallery {
+    margin: 0px;
+}
+
+.wp-block-media-text {
+    margin-bottom: 30px;
+}
+.wp-block-media-text .wp-block-media-text__media {
+    overflow: hidden;
+}

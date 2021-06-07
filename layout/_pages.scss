@@ -1,0 +1,44 @@
+/*
+----------------------------
+    @PAGES 
+----------------------------
+*/
+.page-title {
+    @include page-title;
+    
+
+    h1 {
+        @include page-title-h1
+    }
+}
+
+//section.page-title {
+//
+//}
+
+article#container {
+    padding: 0px 0px 60px 0px;
+}
+
+.time {
+    @include copy-text (0px 0px 1em 0px);
+    font-size: $text-size - 0.18rem;
+    line-height: $text-lh/1.66;
+        
+    &:before {
+        content: '\f017';
+        font-family: 'FontAwesome';
+        font-style:normal ;
+        font-size: $text-size - 0.18rem;
+        color: $text-color;
+        padding: 0px 5px 0px 0px;
+    }
+}
+
+.error404.page-title {
+    display: none;
+}
+
+.error404 #grid-one-col  {
+    grid-template-rows: 130px 100px 1fr auto;
+}

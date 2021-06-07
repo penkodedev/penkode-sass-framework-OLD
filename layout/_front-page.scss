@@ -1,0 +1,72 @@
+/*
+----------------------------
+@HOME PAGE
+----------------------------
+*/
+
+//-------------------------------------------------
+//            HOME TWO COL
+//-------------------------------------------------
+
+/*.home main {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home aside {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #ccc;
+    padding-top: 70px;
+    align-items: center;
+    background: url(images/bg-home.png);
+}*/
+
+
+//-------------------------------------------------
+//            HOME FULL WIDTH
+//-------------------------------------------------
+
+.home main {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-full-col main {
+    padding: 0px;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+#home-full-col article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+//-------------------------------------------------
+//            HOME CUSTOM CODE
+//-------------------------------------------------
+
+#home-full-col section.post-grid,
+#home-full-col article .wp-block-columns,
+#home-full-col section .post-grid, {
+    width: 90%;
+}
+
+.circulos {
+    width: 60% !important;
+}
+
+.full-slider {
+    position: relative;
+    display: block;
+    width: 100%;
+}

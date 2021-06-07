@@ -1,0 +1,145 @@
+/*
+----------------------------
+    @MOBILE NAV  
+----------------------------
+*/
+
+// Panel Styles
+ 
+.panel-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    background: #c1c1c1;
+    transition: all 1s ease;
+    right:-100%; //////change slide side
+    top: 130px; ///////change due header height
+    bottom: 0px;
+    overflow-y: scroll;
+    z-index: 9;
+}
+
+//.panel-nav::-webkit-scrollbar {
+// width: 55px;
+// right:5px;
+// position:absolute;
+//}
+
+//.panel-nav::-webkit-scrollbar-track {
+// background-color:#848181;
+//}
+
+//.panel-nav::-webkit-scrollbar-thumb {
+//  background:#efefef;
+// border-radius:0px;
+//}
+
+
+.panel-nav:target {
+    right: 0; ///////change slide side
+    transition: all 0.3s ease;
+}
+
+.panel-nav:target + .burguer-icon {
+    width: 90%;
+}
+
+.panel-nav:target + .burguer-icon a#open-menu {
+    display: none;
+}
+
+.panel-nav:target + .burguer-icon a#close-menu {
+    display: block;
+}
+
+a#close-menu {
+    display: none;
+}
+
+
+//Icon Styles
+
+.burguer-icon {
+    width: auto;
+    transition: all 1s ease;
+    z-index: 9999;
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+a#close-menu .bar1,
+a#close-menu .bar2,
+a#close-menu .bar3 {
+    background-color: black;
+}
+
+#open-menu,
+#close-menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+    top: 45px;
+}
+
+#close-menu .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+#close-menu .bar2 {
+    opacity: 0;
+}
+
+#close-menu .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+// Menu
+
+.mobile-nav {
+    font-family: $heading-font;
+    font-size: 1.44rem;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    display: block;
+}
+.mobile-nav a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #525050;
+    display: block;
+    padding: 5px 0px 5px 0px;
+}
+
+.mobile-nav ul.sub-menu li  {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.mobile-nav a:hover {
+    color: #6c6666;
+    background: white;
+}
+
+.mobile-nav ul.sub-menu {
+    padding-left: 10px;
+}
+
+.mobile-nav .menu-item-has-children > a:after {
+    content: '';
+}

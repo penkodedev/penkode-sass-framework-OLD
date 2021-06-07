@@ -1,0 +1,38 @@
+/*
+----------------------------
+    @AUTHOR  
+----------------------------
+*/
+.author-container {
+    @include copy-text;
+    display: grid;
+    grid-template-rows: 30px 50px;
+    grid-template-columns: 80px 75%;
+    grid-gap: 12px;
+    grid-template-areas:
+        "media name"
+        "media desc";
+    padding: 60px 0px;
+    margin:0px;
+
+    .author-name {
+        grid-area: name;
+        align-self: end;
+        font-weight: $bold;
+        font-size: $text-size/1.12;
+    }
+
+        .author-Desc {
+            grid-area: desc;
+            font-weight: $normal;
+            font-size: $text-size/1.3;
+            line-height: $text-lh/1.66;
+            font-style: italic;
+    }
+}
+
+.author-container img {
+    grid-area: media;
+    align-self: start;
+    border-radius: 100px;
+}

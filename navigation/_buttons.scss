@@ -1,0 +1,28 @@
+/*
+----------------------------
+    @BUTTONS   
+----------------------------
+*/
+button,
+.button,
+a.button,
+button a,
+p a.button,
+#nav-single .pag-previous a,
+#nav-single .pag-next a,
+
+input#wp-submit.button.button-primary,
+input.wpcf7-submit,
+.page-template-login article a,
+div.wp-block-cover p a:link
+
+{
+    @include button-medium;
+}
+
+.grid-item-content a.button,
+div.wp-block-button a.wp-block-button__link
+
+{
+    @include button-little;
+}

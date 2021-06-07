@@ -1,0 +1,123 @@
+/*
+----------------------------
+    @GRID AREAS   
+----------------------------
+*/
+
+//Assign HTML elements on Grid Layout
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+article {grid-area: article;}
+section {grid-area: section;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+h1 {grid-area: h1;}
+h2 {grid-area: h2;}
+h3 {grid-area: h3;}
+h4 {grid-area: h4;}
+h5 {grid-area: h5;}
+h6 {grid-area: h6;}
+
+
+//Assign Custom areas
+.page-title { grid-area: pagetitle;}
+.main-container { grid-area: maincontainer;}
+.top-header {grid-area: topheader}
+.slider {grid-area: slider}
+
+
+//----------------------------------------------------
+//            HOME FULL WIDTH
+//----------------------------------------------------
+
+#home-full-col {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 130px auto 1fr 250px;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "slider slider slider"
+        "main main main"
+        "footer footer footer";
+}
+
+//----------------------------------------------------
+//            HOME 2 COL
+//----------------------------------------------------
+
+#home-two-col {
+    display: grid;
+    grid-template-columns: 48% 1fr 12%;
+    grid-template-rows: 130px 1fr;
+    height: 100vh;
+    grid-template-areas:
+        "aside header header"
+        "aside main ."
+        "aside footer footer";
+}
+
+//----------------------------------------------------
+//            PAGE 1 COL WIDE
+//----------------------------------------------------
+
+#grid-one-col-wide {
+    display: grid;
+    grid-template-columns: 14% 1fr 14%;
+    grid-template-rows: 130px 250px 1fr auto;//header height
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "pagetitle pagetitle pagetitle"
+        ". main ."
+        "footer footer footer";
+}
+
+//----------------------------------------------------
+//            PAGE 1 COL
+//----------------------------------------------------
+
+#grid-one-col {
+    display: grid;
+    grid-template-columns: 28% 1fr 28%;
+    grid-template-rows: 130px 250px 1fr auto;//header height
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "pagetitle pagetitle pagetitle"
+        ". main ."
+        "footer footer footer";
+}
+
+//----------------------------------------------------
+//            PAGE 2 COL
+//----------------------------------------------------
+
+#grid-two-col {
+    display: grid;
+    grid-template-columns: 18% 20% 1fr 18%;
+    grid-template-rows: 130px 250px 1fr 250px;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    grid-template-areas:
+        " header header header header"
+        " pagetitle pagetitle pagetitle pagetitle"
+        ". aside main . "
+        "footer footer footer footer";
+}
+
+//----------------------------------------------------
+//            PAGE LOGIN
+//----------------------------------------------------
+
+#grid-login {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 150px 1fr auto;
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        ". main .";
+}
