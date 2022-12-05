@@ -32,7 +32,6 @@
 <?php wp_footer(); ?>
 <?php get_template_part('/template-parts/mobile-nav'); ?>
 <div role="nav" class="back-to-top"></div>
-
 </div>  <!-- CLOSE GRID -->
 </body> <!-- CLOSE BODY -->
 </html> <!-- CLOSE HTML -->
