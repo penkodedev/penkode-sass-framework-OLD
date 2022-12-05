@@ -20,7 +20,7 @@
                             <?php the_title(); ?>
                         </h5>
                         <p class="grid-item-excerpt">
-                            <?php echo excerpt('24'); ?>
+                            <?php echo excerpt('34'); ?>
                         </p>
                         <a class="button" href="<?php the_permalink(); ?>"><?php _e('ver más', 'panambi' ); ?></a>
                     </div>
