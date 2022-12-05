@@ -20,7 +20,7 @@
                             <?php the_title(); ?>
                         </h5>
                         <p class="grid-item-excerpt">
-                            <?php echo excerpt('34'); ?>
+                            <?php echo excerpt('32'); ?>
                         </p>
                         <a class="button" href="<?php the_permalink(); ?>"><?php _e('ver más', 'panambi' ); ?></a>
                     </div>
@@ -34,7 +34,7 @@
             <nav class="pagination">
                 <?php echo paginate_links( ); ?>
             </nav>
-            
+
         </section>
     </main>
     <?php get_footer(); ?>
