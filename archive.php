@@ -13,7 +13,7 @@
             <div class="post-col col-4">
                 <div class="grid-item">
                     <figure><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('large'); ?></a>
+                            <?php the_post_thumbnail('medium'); ?></a>
                     </figure>
                     <div class="grid-item-content">
                         <h5>
