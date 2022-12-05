@@ -1,0 +1,36 @@
+/*
+----------------------------
+    @PAGINATION   
+----------------------------
+*/
+// single page
+#nav-single {
+    display: flex;
+    flex-wrap: wrap;
+
+    .pag-previous a,
+    .pag-next a {
+        margin: 10px;
+        display: block;
+    }
+}
+
+// archives
+nav.pagination {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 40px;
+
+    a.page-numbers,
+    span.page-numbers {
+        @include pagination;
+        border: $border-l solid $black;
+    }
+}
+
+.pagination span.page-numbers.current {
+    color: $button-link-color-hover;
+    background-color: $button-bg-color-hover;
+}

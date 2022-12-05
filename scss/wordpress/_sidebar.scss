@@ -1,0 +1,43 @@
+/*
+----------------------------
+    @SIDEBAR 
+----------------------------
+*/
+
+aside .sidebar { //clean styles from aside content
+	border-left: none;
+	padding: 0 0 56px 22px;
+    border-left: 1px solid #d9d9d9;
+}
+
+aside .sidebox { //clean styles from aside content
+	margin-bottom: 40px;
+}
+
+//__________________________
+
+aside {
+    background: $sidebar-bg-color;
+    padding: 0 0 40px 40px;
+}
+
+.sidebar ul {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+.sidebar ul a {
+	color: $black;
+    padding: 10px;
+    margin: 0;
+}
+.sidebar ul,
+.sidebar li {
+    list-style: none;
+
+}
+
+.sidebar h3 {
+    font-size:calc(1rem + 1vmin);
+    line-height: $text-lh/1;
+}

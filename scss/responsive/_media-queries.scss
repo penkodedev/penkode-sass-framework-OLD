@@ -1,0 +1,124 @@
+@media screen and (min-width: 800px) {
+    .col-1  {width: 8.33333333%;}
+    .col-2  {width: 16.66666667%;}
+    .col-3  {width: 25%;}
+    .col-4  {width: 33.33333333%;}
+    .col-5  {width: 41.66666667%;}
+    .col-6  {width: 50%;}
+    .col-7  {width: 58.33333333%;}
+    .col-8  {width: 66.66666667%;}
+    .col-9  {width: 75%;}
+    .col-10 {width: 83.33333333%;}
+    .col-11 {width: 91.66666667%;}
+    .col-12 {width: 100%;}
+}
+
+//----------------------------------------------------
+//            SMALLER THAN 1440px
+//----------------------------------------------------
+@media screen and (max-width: 1440px) {
+
+
+}
+
+//----------------------------------------------------
+//            SMALLER THAN 1200px
+//----------------------------------------------------
+@media screen and (max-width: 1200px) {
+
+
+}
+
+
+//----------------------------------------------------
+//            SMALLER THAN 992px
+//----------------------------------------------------
+@media screen and (max-width: 992px) {
+
+
+
+}
+
+//----------------------------------------------------
+//            SMALLER THAN 768px
+//----------------------------------------------------
+@media screen and (max-width: 768px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .burguer-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    footer nav {
+        display: none
+    }
+
+    article ul {
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+	
+	.single-product main {
+		margin-top: 10px;
+	}
+	
+	p#breadcrumbs {
+		font-size: 0.94em !important;
+	}
+	
+	.single-product #breadcrumbs {
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+
+//----------------------------------------------------
+//            SMALLER THAN 576px
+//----------------------------------------------------
+@media screen and (max-width: 576px) {
+
+    p,
+    article ul {
+        font-size: ($text-size/1.18);
+        line-height: ($text-lh/1.18);
+    }
+    
+    h1 {
+        line-height: 1.1em;
+    }
+    
+    .wp-block-image img,
+    .wp-block-image .alignleft,
+    figure.alignleft,
+    img.alignleft,
+    figure.alignright,
+    img.alignright {
+        float: none !important;
+        display: block;
+    }
+
+}
+
+//----------------------------------------------------
+//            SMALLER THAN 400px
+//----------------------------------------------------
+@media screen and (max-width: 400px) {
+
+	header #logo-container {
+		position: absolute;
+		top: 18px;
+		left: 30px;
+		
+		img {
+			width: 64%;
+		}
+	}
+	
+	.post-type-archive-product section.page-title  {
+		display: none;
+	}
+}

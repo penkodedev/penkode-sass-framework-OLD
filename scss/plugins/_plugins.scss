@@ -1,0 +1,104 @@
+
+//----------------------------------------------------
+//            MAILPOET
+//----------------------------------------------------
+
+#mailpoet_form_1 form.mailpoet_form {
+  padding: 0 !important;
+}
+
+//----------------------------------------------------
+//            YOAST BREADCRUMBS
+//----------------------------------------------------
+p#breadcrumbs a {
+    font-size: $text-size - 0.26 !important;
+    color: #7c7c7c;
+    text-decoration: none !important;
+}
+
+.breadcrumb_last {
+    font-size: $text-size - 0.16 !important;
+    font-weight: bold;
+}
+
+//----------------------------------------------------
+//            CONTACT FORM7
+//----------------------------------------------------
+
+.wpcf7-form-control-wrap input p {
+	font: $text-font-strong;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted,
+.wpcf7-response-output {
+    font-family: $text-font-strong;
+	font-size: 1.2em;
+	text-align: center;
+	background: $error-bg-color !important;
+    border: 0 !important;
+	border-radius: border-m !important;
+    color: $error-font-color;	
+    padding: 40px;
+}
+
+
+form.wpcf7-form p {
+    line-height: 0rem;
+}
+
+.wpcf7-form-control-wrap { // placeholder font
+	font-family: $text-font-strong;
+	color: $black;
+}
+
+span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: -6px;
+    right: 5px;
+	color: $black;
+	background: $error-bg-color;
+	height: auto;
+    line-height: 25px;
+    padding: 8px;
+	border-radius: border-m !important;
+}
+
+
+.wpcf7-validation-errors,
+.div.wpcf7-response-output {
+    font-family: $text-font;
+    color: $error-font-color;
+    padding: 40px;
+}
+
+form.wpcf7-form p {
+    margin-bottom:20px !important;
+}
+
+form.wpcf7-form textarea {
+    max-height: 150px;
+}
+
+
+
+
+//----------------------------------------------------
+//            GUTENBERG
+//----------------------------------------------------
+
+li.blocks-gallery-item:before {
+    content: 'none';
+    display: none;
+}
+
+ul.wp-block-gallery {
+    margin: 0px;
+}
+
+.wp-block-media-text {
+    margin-bottom: 30px;
+}
+.wp-block-media-text .wp-block-media-text__media {
+    overflow: hidden;
+}

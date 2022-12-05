@@ -1,0 +1,44 @@
+.post-image img {
+	margin: 20px auto 40px auto;
+}
+
+.single .page-title {
+    justify-content: flex-start;
+}
+/*
+----------------------------
+    @AUTHOR  
+----------------------------
+*/
+.author-container {
+    @include copy-text;
+    display: grid;
+    grid-template-rows: 30px 50px;
+    grid-template-columns: 80px 100%;
+    grid-gap: 12px;
+    grid-template-areas:
+        "media name"
+        "media desc";
+    padding: 60px 0px;
+    margin:0 0 80px 0;
+
+    .author-name {
+        grid-area: name;
+        align-self: end;
+        font-weight: $bold;
+        font-size: $text-size/1.12;
+    }
+
+        .author-Desc {
+            grid-area: desc;
+            font-weight: $normal;
+            font-size: $text-size/1.36;
+            line-height: $text-lh/1.2;
+    }
+}
+
+.author-container img {
+    grid-area: media;
+    align-self: start;
+    border-radius: 100px;
+}

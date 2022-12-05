@@ -1,0 +1,181 @@
+/*
+----------------------------
+    @GRID AREAS   
+----------------------------
+*/
+
+//Assign HTML elements on Grid Layout
+.grid-header {grid-area: header;}
+.grid-nav {grid-area: nav;}
+.grid-main {grid-area: main;}
+.grid-aside {grid-area: aside;}
+.grid-footer {grid-area: footer;}
+//.grid-article {grid-area: article;}
+//.grid-section {grid-area: section;}
+h1 {grid-area: h1;}
+h2 {grid-area: h2;}
+h3 {grid-area: h3;}
+h4 {grid-area: h4;}
+h5 {grid-area: h5;}
+h6 {grid-area: h6;}
+
+
+//Assign Custom areas
+.page-title { grid-area: pagetitle;}
+.main-container { grid-area: maincontainer;}
+.top-header {grid-area: topheader}
+.slider {grid-area: slider}
+
+
+//----------------------------------------------------
+//            HOME FULL WIDTH
+//----------------------------------------------------
+
+#home-full-col {
+    display: grid;
+    grid-template-columns: 12% 1fr 12%;
+    grid-template-rows: 130px auto 1fr auto;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "slider slider slider"
+        "main main main"
+        "footer footer footer";
+}
+
+//----------------------------------------------------
+//            HOME 2 COL
+//----------------------------------------------------
+
+#home-two-col {
+    display: grid;
+    grid-template-columns: 48% 1fr 12%;
+    grid-template-rows: 130px 1fr;
+    height: 100vh;
+    grid-template-areas:
+        "aside header header"
+        "aside main ."
+        "aside footer footer";
+}
+
+
+//----------------------------------------------------
+//            GRID 1 COL
+//----------------------------------------------------
+
+#grid-one-col {
+	display: grid;
+	grid-template-columns: 20% 1fr 20%;
+	grid-template-rows: 130px 250px 1fr auto;
+	height: 100vh;
+	grid-template-areas:
+		"header header header"
+		"pagetitle pagetitle pagetitle"
+		". main ."
+		"footer footer footer";
+
+	@media screen and (max-width: 1440px) {
+		grid-template-columns: 15% 1fr 15%;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 5% 1fr 5%;
+	}
+}
+
+
+//----------------------------------------------------
+//            GRID 1 COL WIDE
+//----------------------------------------------------
+
+#grid-one-col-wide {
+	display: grid;
+	grid-template-columns: 14% 1fr 14%;
+	grid-template-rows: 130px 250px 1fr auto;
+	height: 100vh;
+	grid-template-areas:
+		"header header header"
+		"pagetitle pagetitle pagetitle"
+		". main ."
+		"footer footer footer";
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 5% 1fr 5%;
+	}
+}
+
+
+//----------------------------------------------------
+//            GRID 2 COL
+//----------------------------------------------------
+
+#grid-two-col {
+	display: grid;
+	grid-template-columns: 18% 1fr 20% 18%;
+	grid-template-rows: 130px 250px 1fr auto;
+	grid-column-gap: 30px;
+	grid-row-gap: 0px;
+	height: 100vh;
+	grid-template-areas:
+		"header header header header"
+		" . pagetitle pagetitle ."
+		". main aside . "
+		"footer footer footer footer";
+
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 5% 1fr 5%;
+
+	}
+}
+
+//----------------------------------------------------
+//            PAGE LOGIN
+//----------------------------------------------------
+
+#grid-login {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 150px 1fr auto;
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        ". main .";
+}
+
+
+
+//----------------------------------------------------
+//            WOOCOMEERCE SHOP PAGE
+//----------------------------------------------------
+
+#grid-page-shop {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 130px 250px 1fr auto;//header height
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "pagetitle pagetitle pagetitle"
+        ". main ."
+        "footer footer footer";
+}
+
+//----------------------------------------------------
+//            WOOCOMEERCE SINGLE PRODUCT
+//----------------------------------------------------
+
+#single-product {
+    display: grid;
+    grid-template-columns: 12% 1fr 12%;
+    grid-template-rows: 130px 1fr auto auto;//header height
+    height: 100vh;
+    grid-template-areas:
+        "header header header"
+        ". main ."
+        "article article article"
+        "footer footer footer";
+}
+
+
+

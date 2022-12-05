@@ -1,0 +1,106 @@
+//----------------------------------------------------
+//            ARTICLE
+//----------------------------------------------------
+
+
+$article-link: 'article p a:link, main p a:link, article ul a:link, article ol a:link, p#breadcrumbs a,';
+
+#{$article-link}, :visited {
+    color:$black;
+    text-decoration: none;
+    /*text-decoration-color: $article-link-decoration-color; //use as normal decoration*/
+    padding: 0px 0px;
+    transition: color 0.6s ease-out, background 0.6s ease-out;
+    background-image: linear-gradient(to right,$article-link-decoration-color 100%,#fff 0); // use as bold decoration
+    background-position: 0 140%;
+    background-repeat: repeat-x;
+    background-size: 100% 35%;
+
+    &:hover  {
+        color: $white;
+        background: $branding-color1;
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.wp-block-gallery figure a, article a img {
+    transition: transform .3s; /* Animation */
+        &:hover {
+        transform: scale(1.013);
+    }
+}
+
+//----------------------------------------------------
+//            SIDEBAR
+//----------------------------------------------------
+
+.sidebar a {
+    @include copy-text;
+    font-size: $second-level-link-size;
+    text-decoration: none;
+    line-height: $second-level-link-size / 0.65;
+    margin: 0px 0px $padding-l 0px;
+    color: $article-link-color;
+    display: block;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+//----------------------------------------------------
+//            LOGIN PAGE
+//----------------------------------------------------
+
+.page-template-login article {
+    display: flex;
+    justify-content: center;
+}
+
+.page-template-login article a {
+    margin: 10px;
+}
+
+
+//----------------------------------------------------
+//            BACK TO TOP
+//----------------------------------------------------
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 47px;
+    height: 47px;
+    border-radius: 13px;
+    cursor: pointer;
+	background: $black;
+    z-index: 9999;
+
+    &:before {
+		display: flex;
+		justify-content: center;
+        content: '\f106';
+        font-family: 'FontAwesome';
+        font-size: 2em;
+        color: $white;
+        margin-top: 4px;
+    }
+}
+
+.back-to-top:hover {
+	background: $branding-color2;
+
+	&:before {
+		color: $black;
+	}
+}
+
+//----------------------------------------------------
+//            GENERAL STUFF
+//----------------------------------------------------
+
+article a img:hover {
+    background: none !important;
+}

@@ -1,0 +1,105 @@
+// GRID POSTS FULL WIDTH
+.post-full.col-1  {width: 100%;}
+.post-full.col-2  {width: 100%;}
+.post-full.col-3  {width: 100%;}
+.post-full.col-4  {width: 100%;}
+.post-full.col-5  {width: 100%;}
+.post-full.col-6  {width: 100%;}
+.post-full.col-7  {width: 100%;}
+.post-full.col-8  {width: 100%;}
+.post-full.col-9  {width: 100%;}
+.post-full.col-10 {width: 100%;}
+.post-full.col-11 {width: 100%;}
+.post-full.col-12 {width: 100%;}
+
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.post-full {
+    display: flex;
+	width: 100%;
+    padding: 0;
+	margin: 0 0 80px 0 !important;
+}
+
+.post-full .grid-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%; // grid width
+    border:none;
+    overflow: hidden;
+    background:none;
+	margin: 0 auto;
+
+    figure {
+        position: relative;
+        width: 380px; // thumb size
+		height: 220px;// thumb size
+		margin-right: 20px;
+        overflow: hidden;
+        transition: transform .2s;
+        background: url(images/no-image.png) no-repeat center center;
+        background-size: cover;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.grid-item {
+		@media screen and (max-width: 800px) {
+			flex-direction: column;
+	}
+}
+
+.grid-item figure img {
+	width: 100%; //THUMB ADJUSTER
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 20px;
+
+		@media screen and (max-width: 800px) {
+			height: 180px;
+			width: 100%;
+			object-fit: cover;
+	}
+}
+
+.grid-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.grid-item-content .time {
+   margin: 0px;
+}
+
+.grid-item-content p.grid-item-excerpt {
+    @include copy-text;
+    font-size: $text-size - 0.08rem;
+    line-height: $text-lh;
+    margin-top: 1rem;
+	margin-bottom: 0 !important;
+	width: 80%;
+	text-align: left;
+    
+}
+
+.grid-item-content h5 {
+    margin: 0 0px 10px 0px;
+    font-size: 1.8rem;
+    line-height: 1.95rem;
+}
+
+.flex-spacer {
+    flex-grow: 1;
+}

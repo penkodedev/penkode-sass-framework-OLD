@@ -1,0 +1,160 @@
+/*
+----------------------------
+    @HEADER  
+----------------------------
+*/
+
+.grid-header { //define header head on the grid
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+	width: 100%;
+    background: none;
+    padding: 0 25px 0 25px;
+    z-index: 9999;
+}
+
+#logo-container {
+    //position: absolute;
+    //left: 25px;
+    width: 105px; // LOGO TOP SIZE
+}
+
+#logo-container img {
+    shape-rendering:geometricPrecision;
+    width: 100%;
+    height: auto;
+}
+
+#logo-container a:link,
+#logo-container a:visited {
+    border: 0px;
+    background: none;
+    cursor: pointer;
+    display: block;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+#logo-container a:hover {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    background: $branding-color1;
+    height: 4em;
+    padding: $padding-m;
+
+    p {
+        font-size: $text-size/1.5;
+    }
+}
+
+
+
+/// CART COUNTER
+a.cart-counter {
+    @include copy-text;   
+	text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    background:$branding-color2;
+    color: $white;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 10px;
+	
+	&:hover {
+		background:$black;
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+
+/// CART
+.cart-header {
+    display: flex;
+    margin-left: 10px;
+	
+    
+    &:before {
+        content: "\f2fa";
+        font-family: 'Lineawesome';
+        font-size: 1.9em;
+        color: $black;
+    }
+        &:hover:before {
+        color: $branding-color1!important;
+
+    }
+}
+
+a.cart-header {
+    text-decoration: none !important;
+}
+
+
+/// WHATSAPP
+a.whatsapp-call {
+	display: flex;
+	text-decoration: none;
+    margin-left: 10px;
+
+	&:before {
+		content: "\f37a";
+		font-family: 'Lineawesome';
+		font-size: 1.5em;
+		color: $black;
+
+		&:hover:before {
+			color: $branding-color1 !important;
+
+		}
+	}
+}
+
+
+/// USER ACCOUNT
+a.user-header {
+	text-decoration: none;
+}
+
+
+.user-header {
+    display: flex;
+	
+    
+    &:before {
+        content: "\f364";
+        font-family: 'Lineawesome';
+        font-size: 1.8em;
+        color: $black;
+    }
+        &:hover:before {
+        color: $branding-color1!important;
+
+    }
+}
+
+
+.search-form {
+    position: absolute;
+    margin-right: 116px;
+    top: 42px;
+}

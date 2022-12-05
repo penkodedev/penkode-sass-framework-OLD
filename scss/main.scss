@@ -1,0 +1,74 @@
+/*! -------------------------------------------------
+Theme Name: Penkode Framework 2.2-beta
+Theme URI: http://www.penkode.com/
+Description: Penkode Framework WordPress theme. You can create a child theme, but it's not necesary. You can create your theme through the SASS files included for build your WordPress site. Created by Paulo Ramalho.
+Author: Paulo Ramalho (wwww.penkode.com)
+Author web: www.penkode.com
+Author URI: www.penkode.com
+Version: 2.2
+.
+For exclusive use of Penkode clients.
+.
+----------------------------------------------*/
+
+//Mixins (do not generate CSS code)
+@import "-mixins/mixins";
+@import "-mixins/mixins-effects";
+
+
+//Variables (DO NOT GENERATE CSS CODE BY ITSELF)
+@import "-variables/theme-fonts";
+@import "-variables/theme-colors";
+@import "-variables/theme-layout";
+@import "-variables/theme-tables";
+
+
+//HTML Resets
+@import "html/resets";
+
+//Typography
+@import "typography/font-face";
+@import "typography/fonts";
+
+
+//Layout Structure
+@import "layout/grid-layout";
+@import "layout/grid-posts-col";  // choose between col or full for post grid
+@import "layout/grid-posts-full"; // choose between col or full for post grid
+@import "layout/pages";
+@import "layout/pages-archives";
+@import "layout/pages-singles";
+@import "layout/front-page";
+
+
+//Navigation Menus
+@import "navigation/nav-megamenu";
+@import "navigation/nav-main";
+@import "navigation/nav-footer";
+@import "navigation/nav-float";
+@import "navigation/nav-mobile";
+@import "navigation/links";
+@import "navigation/buttons";
+@import "navigation/pagination";
+@import "navigation/social";
+@import "navigation/modal";
+
+
+//HTML, WordPress components & Plugins
+@import "html/fields";
+@import "html/tables";
+@import "wordpress/gutenberg";
+@import "wordpress/media";
+@import "wordpress/search";
+@import "wordpress/login";
+@import "wordpress/header";
+@import "wordpress/sidebar";
+@import "wordpress/footer";
+@import "plugins/plugins";
+@import "plugins/woocommerce"; // enable or disable custom woo styles
+
+//Media Queries
+@import "responsive/media-queries";
+
+//Animations
+@import "layout/animations";
