@@ -10,7 +10,7 @@
         
          <section class="post-grid">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="post-col col-3">
+            <div class="post-col col-4">
                 <div class="grid-item">
                     <figure><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('medium'); ?></a>
@@ -34,7 +34,7 @@
             <nav class="pagination">
                 <?php echo paginate_links( ); ?>
             </nav>
-
+            
         </section>
     </main>
     <?php get_footer(); ?>
