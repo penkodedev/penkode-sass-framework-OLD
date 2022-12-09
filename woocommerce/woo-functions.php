@@ -21,9 +21,7 @@ if( ! empty( $vars['pagename'] ) || ! empty( $vars['category_name'] ) || ! empty
 return $vars;
 });
 	
-//*******************Woocommerce Different Address send *****************
 
-add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
 //*******************Woocommerce Logged status on body class *****************
 add_filter('body_class','er_logged_in_filter');
