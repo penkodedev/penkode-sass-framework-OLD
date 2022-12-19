@@ -52,9 +52,16 @@ div.wp-block-cover p strong {
 }
 
 
+
 //
-// Multi Columns CAPTIONS
+// COLUMNS
 //
+
+.wp-block-column ul {
+    margin: 0;
+    padding: 0;
+}
+
 div.wp-block-column div.wp-block-image figcaption {
     font-weight: $bold;
 }
