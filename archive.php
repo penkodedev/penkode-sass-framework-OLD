@@ -2,10 +2,14 @@
 <div id="grid-one-col-wide">
     <!-- OPEN GRID / close on footer -->
     <div class="grid-header"><?php get_header(); ?></div>
-    <section class="page-title"><?php
-                                the_archive_title('<h1 class="page-title">', '</h1>');
-                                the_archive_description('<div class="archive-description">', '</div>');
-                                ?></section>
+
+    <section class="page-title">
+        <?php
+        the_archive_title('<h1 class="page-title">', '</h1>');
+        the_archive_description('<div class="archive-description">', '</div>');
+        ?>
+    </section>
+
     <main class="grid-main animate fadeIn" id="main-container">
         <?php if (function_exists('yoast_breadcrumb')) {
             yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
@@ -32,13 +36,13 @@
                 <?php endwhile;
             else : ?>
                 <p class="no-post-msj"><?php _e('Lo sentimos, ninguna entrada coincide con tus criterios de búsqueda.
-		Utilize el menú de la parte superior para navegar por nuestra web.', 'foo'); ?></p>
+		                Utilize el menú de la parte superior para navegar por nuestra web.', 'foo'); ?></p>
             <?php endif; ?>
+        </section>
 
             <nav class="pagination">
                 <?php echo paginate_links(); ?>
             </nav>
 
-        </section>
     </main>
     <?php get_footer(); ?>

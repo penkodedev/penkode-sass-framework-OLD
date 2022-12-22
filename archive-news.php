@@ -1,11 +1,13 @@
 <?php get_template_part('/template-parts/doc-type'); ?>
-<div id="grid-one-col">
+<div id="grid-one-col-wide">
 	<!-- OPEN GRID / close on footer -->
 	<div class="grid-header"><?php get_header(); ?></div>
+
 	<section class="page-title">
 		<h1><?php $post_type = get_post_type_object(get_post_type($post));
 			echo $post_type->label; ?></h1>
 	</section>
+
 	<main class="grid-main animate fadeIn" id="main-container">
 		<?php if (function_exists('yoast_breadcrumb')) {
 			yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
@@ -44,10 +46,11 @@
 			else : ?>
 				<p class="no-post-msj"><?php _e('Lo sentimos, ninguna entrada coincide con tus criterios de búsqueda. Utilize el menú de la parte superior para navegar por nuestra web.', 'foo'); ?></p>
 			<?php endif; ?>
-
-			<nav class="pagination">
-				<?php echo paginate_links(); ?>
-			</nav>
 		</section>
+
+		<nav class="pagination">
+			<?php echo paginate_links(); ?>
+		</nav>
+
 	</main>
 	<?php get_footer(); ?>
