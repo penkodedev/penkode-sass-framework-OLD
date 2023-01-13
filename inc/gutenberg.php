@@ -7,17 +7,17 @@
  function penkode_gutenberg_default_colors ()
 {
 
-    add_theme_support(
-        'editor-color-pallete',
-        
-        array(
-            array (
-            'name' => 'adfadf',
-            'slug' => 'slug',
-            'color' => '#ffffff'
+	add_theme_support(
+		'editor-color-pallete',
+		
+		array(
+			array (
+			'name' => 'Super Block',
+			'slug' => 'slug',
+			'color' => '#ffffff'
 
-        )
-    )
+		)
+	)
  );
 }
 
