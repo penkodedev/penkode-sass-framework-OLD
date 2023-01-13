@@ -104,3 +104,21 @@ $article-link: 'article p a:link, main p a:link, article ul a:link, article ol a
 article a img:hover {
     background: none !important;
 }
+
+//----------------------------------------------------
+//            COOKIES
+//----------------------------------------------------
+
+.cc-banner.cc-bottom {
+    bottom: 50px !important;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white; // to overwrite javascript color value
+    color: black; // to overwrite javascript color value
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.29);
+}

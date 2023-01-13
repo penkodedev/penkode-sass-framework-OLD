@@ -16,7 +16,7 @@
 			<h1><?php the_title(); ?></h1>
 
 			<figure class="post-image">
-				<?php // the_post_thumbnail('large'); ?>
+				<?php //the_post_thumbnail('large'); ?>
 			</figure>
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

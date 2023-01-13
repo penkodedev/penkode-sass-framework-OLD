@@ -16,8 +16,7 @@
   <link rel="stylesheet" type="text/css" href="<?= get_bloginfo("template_url"); ?>/css/flickity.css" media="screen" title="style (screen)" />
   <!-- LIBRARIES CSS END -->
 
-
-  <!-- LIBRARIES JS BEGIN -->
+  <!-- JS LIBRARIES BEGIN -->
   <script>
     AOS.init({
       useClassNames: true
@@ -27,7 +26,7 @@
   <script src="<?= get_bloginfo("template_url"); ?>/js/aos.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/prognroll.js"></script>
-  <!-- LIBRARIES JS END -->
+  <!-- JS LIBRARIES END -->
 
   <title>
     <?php wp_title(''); ?>
@@ -59,6 +58,7 @@
       get_template_part('/template-parts/logo-container');
     }
     ?>
+
     <nav role="navigation">
       <?php wp_nav_menu(array(
         'theme_location' => 'mainnav',
