@@ -14,7 +14,7 @@
 			array (
 			'name' => 'Super Block',
 			'slug' => 'slug',
-			'color' => '#ffffff'
+			'color' => '#efefef'
 
 		)
 	)
