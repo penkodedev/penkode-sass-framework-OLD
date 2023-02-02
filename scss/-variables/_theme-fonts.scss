@@ -4,15 +4,6 @@
 //
 ///////////////////////////////////
 
-//
-// TEXT WEIGHTS
-//
-$light: 300;
-$normal: 400;
-$semibold: 500;
-$bold: 800;
-$bolder: 900;
-
 
 //
 // MAIN TEXT
@@ -22,6 +13,17 @@ $text-font-strong: 'Futura-Regular', Helvetica, Arial, sans-serif;
 $text-size: 1.14rem;
 $text-lh: 1.55;
 $text-margin: 0 0 1em 0;
+
+
+
+//
+// TEXT WEIGHTS
+//
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 800;
+$bolder: 900;
 
 
 //
@@ -57,7 +59,7 @@ $menu-size: 1.2rem;
 
 
 //
-// ARTICLE LINK SIZE
+// ARTICLE LINK
 //
 $article-link-font-weight: 300;
 $article-link-decoration:underline;
