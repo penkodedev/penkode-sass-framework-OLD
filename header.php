@@ -49,7 +49,6 @@
 </head>
 
 <body <?php body_class($class); ?>>
-
   <header class="grid-header" id="header-container">
     <?php if (is_front_page()) {
       get_template_part('/template-parts/logo-container-home');
