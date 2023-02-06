@@ -1,5 +1,4 @@
 <div class="nav-overlay"></div>
-
 <head>
   <?php load_theme_textdomain('foo'); ?>
   <meta charset="<?php bloginfo('charset'); ?>">
