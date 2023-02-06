@@ -127,7 +127,6 @@ function custom_language_selector()
 //*************************YOUTUBE/VIMEO 100% WIDTH ********************
 add_theme_support('responsive-embeds');
 
-
 //************** REMOVE WORD "Category:" from category pages titles ******************
 function prefix_category_title($title)
 {
