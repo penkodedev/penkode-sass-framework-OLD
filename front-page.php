@@ -15,7 +15,10 @@ Template Name: Index Full Width
 					<?php endwhile;
 				else : ?>
 				<?php endif; ?>
+
 			</article>
+
+		
 		</section>
 
 		<section class="section-02">

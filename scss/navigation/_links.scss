@@ -69,23 +69,23 @@ $article-link: 'article p a:link, main p a:link, article ul a:link, article ol a
 .back-to-top {
     display: none;
     position: fixed;
+    display: flex;
+    justify-content: center;
     bottom: 20px;
     right: 20px;
     width: 47px;
     height: 47px;
-    border-radius: 13px;
+    border-radius: 7px;
     cursor: pointer;
 	background: $black;
     z-index: 9999;
 
     &:before {
-		display: flex;
-		justify-content: center;
+
         content: '\f106';
         font-family: 'FontAwesome';
         font-size: 2em;
         color: $white;
-        margin-top: 4px;
     }
 }
 

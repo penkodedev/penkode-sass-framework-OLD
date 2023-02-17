@@ -11,8 +11,9 @@ footer {
 	padding: 80px 0 0 0;
 	position: relative;
 	margin-top: 100px;
-	background: $footer-bg-color;
+	//background: $footer-bg-color;
 	//clip-path: polygon(0 0, 100% 29%, 100% 100%, 0% 100%);
+    border-top: 1px solid #ccc;
 
 	:is(footer h1, footer h2, footer h3, footer h4, footer h5, footer h6) { //FOOTER HEADINGS COLOR
 		font-size: 1em;

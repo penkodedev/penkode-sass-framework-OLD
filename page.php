@@ -14,6 +14,5 @@
 			<?php endwhile; else: ?>
 			<?php endif; ?>
 		</article>
-		<?php get_template_part ('/template-parts/carousel'); ?>
 	</main>
 	<?php get_footer(); ?>

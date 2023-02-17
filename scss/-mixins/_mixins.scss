@@ -36,6 +36,7 @@
     justify-content: center;
     margin: 0 0 20px 0;
     background: $page-title-bg-color;
+    border-top: 1px solid #ccc;
     
 }
 
@@ -75,7 +76,8 @@
         color: $button-link-color-hover;
         
             &:active,
-                a:active {
+            a:active {
+                background-color: $button-bg-color-hover;
         }
     }
 }
@@ -124,12 +126,11 @@
         color: $button-link-color-hover;
         //box-shadow: 0 .19em rgba(0, 0, 0, .5);
 
-        &:active,
-        a.button:active {
+        //&:active,
+        //a.button:active {
         // box-shadow: inset 0 0 1.094em #472566, inset 0 .063em #390668, inset 0 -0.188em #682CA0, 0 .063em rgba(255,255,255,.4);
         }
     }
-}
 
 @mixin button-little {
     @include button-base();
